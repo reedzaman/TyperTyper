@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="./js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <nav class="navigation">
+        <div class="navigation__bar">
+            <p class="logo" onclick='location.href="#HOME"'>REED<span>ZAMAN</span></p>
+		    <div class="navigation__menu_horizontal" id="NAV__H">
+		        <ul>
+			        <li><a class="navigation__menu_horizontal__a" href="#">Other Tools</a></li>
+			        <li><a class="navigation__menu_horizontal__a" href="#">Github</a></li>
+		        </ul>
+		    </div>
+        </div>
+    </nav>
+    <section class="test">
+        <div id="test-box"class="test-box">
+            <div class="top">
+                <p id="timer" class="time" style="">60</p>
+                <p class="info-dropdown" id="drop">Test Log <span id="drop-icon" class="material-icons">arrow_drop_down</span></p>
+            </div>
+            <div id="info" class="test-log">
+                <canvas height="100px" width="600px" id="log"></canvas>
+            </div>
+            <div class="text-wrapper">
+                <div id="report">
+                    <div id="reportWPM">
+                        <h1><span id="report-wpm" >62</span> WPM</h1>
+                        <!--<h1>PER MINUTES</h1>-->
+                        <p><span id="report-correct">30</span>   <span  class="left-right-pad">Correct Words</span></p>
+                    </div>
+                    <div id="reportDetails">
+                        <p><span id="report-incorrect"  class="left-right-pad">0</span>    Incorrect Words</p>
+                        <p>( <span id="report-correctLetters"class="left-right-pad font-green">0</span> | <span id="report-incorrectLetters"class="left-right-pad font-red">0</span>) Letters</p>
+                        <p><span id="report-accuracy" class="left-right-pad"></span>%    Accuracy</p>
+                    </div>
+                </div>
+                <div id="text" class="text"></div>
+            </div>
+            <div class="textarea-wrapper">
+                <textarea autofocus enabled id="inp" name="" cols="30" rows="10" placeholder="Start Typing"></textarea>
+                <button id="reset" class="material-icons">replay</button>
+            </div>
+
+        </div>
+    </section>
+
+    <script type="module" src="js/index.js"></script>
+</body>
+</html>
