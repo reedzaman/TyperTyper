@@ -19,5 +19,8 @@
   "homepage": "https://github.com/reedzaman/TyperTyper#readme",
   "devDependencies": {
     "parcel-bundler": "^1.12.5"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0"
   }
 }

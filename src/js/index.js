@@ -1,3 +1,4 @@
+import "./helper/jqueryLoader.js";
 import toggleDropdown from './view/dropdown.js';
 import { handleTest, resetTest } from './helper/test.js';
 
