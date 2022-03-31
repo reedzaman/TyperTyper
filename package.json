@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dist": "parcel src/index.html -d public"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/reedzaman/TyperTyper/issues"
   },
-  "homepage": "https://github.com/reedzaman/TyperTyper#readme"
+  "homepage": "https://github.com/reedzaman/TyperTyper#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
 }
