@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dist": "parcel src/index.html -d public",
+    "dist": "parcel src/index.html --public-url ./ -d public",
     "deploy" : "gh-pages -d public"
   },
   "repository": {
@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/reedzaman/TyperTyper/issues"
   },
-  "homepage": "https://reedzaman.github.io/TyperTyper",
+  "homepage": "https://reedzaman.github.io/typertyper",
   "devDependencies": {
     "parcel-bundler": "^1.12.5"
   },
