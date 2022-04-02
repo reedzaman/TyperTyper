@@ -36,7 +36,8 @@ export function drawReport({wpmList, testTime}){
 
     let canvas = document.getElementById("log");
     var ctx = canvas.getContext("2d");
-    ctx.strokeStyle = 'grey';
+    if($('body').hasClass('dark'))ctx.strokeStyle = '#505050';
+    else ctx.strokeStyle = '#a0a0a0';
 
     ctx.moveTo(30, 15);
     ctx.lineTo(500, 15);
@@ -76,12 +77,14 @@ export function drawReport({wpmList, testTime}){
         ctx.font = "12px Arial";
 
         ctx.beginPath();
-        ctx.fillStyle = '#FCF55F';
+        if($('body').hasClass('dark')) ctx.fillStyle = '#05C3DD';
+        else ctx.fillStyle = '#FCF55F';
         ctx.arc(i * pointGapRate + 50, pointHeights[i] + 10, 3, 0, 2 * Math.PI, false);
 
         ctx.lineWidth = 2;
         ctx.lineTo((i+1) * pointGapRate + 50, pointHeights[i + 1] + 10);
-        ctx.strokeStyle = '#FCF55F';
+        if($('body').hasClass('dark')) ctx.strokeStyle = '#05C3DD';
+        else ctx.strokeStyle = '#FCF55F';
 
         ctx.stroke();
         ctx.fill();
